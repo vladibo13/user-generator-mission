@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="fluid-container">
+        <div class="jumbotron">
+            <h1 class="text-center display-4">Random User Client</h1>
+            <button
+            id="user-btn"
+            type="button"
+            class="btn btn-primary btn-lg btn-block mt-3"
+          >
+            Get User
+          </button>
+          <button
+          id="remove-users-btn"
+          type="button"
+          class="btn btn-danger btn-lg btn-block mt-3"
+        >
+          Remove All Users 
+        </button>
+        </div>
+        <div class="row" id="main"></div>
+        <div id="user-cloned" class="col-sm-3 my-3" style="display: none">
+            <div class="card">
+              <img class="card-img-top" />
+              <div class="card-body">
+                <p id="gender"></p>
+                <p id="name"></p>
+                <p id="age"></p>
+                <p id="email"></p>
+                <button id="btn-delete" class="btn btn-danger">Del</button>
+                <button id="btn-edit" class="btn btn-info">Edit</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/models.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
